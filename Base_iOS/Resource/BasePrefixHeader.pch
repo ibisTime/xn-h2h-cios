@@ -1,0 +1,99 @@
+//
+//  BasePrefixHeader.pch
+//  Base_iOS
+//
+//  Created by 蔡卓越 on 2017/7/13.
+//  Copyright © 2017年 caizhuoyue. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#ifndef BasePrefixHeader_h
+#define BasePrefixHeader_h
+#import <UIKit/UIKit.h>
+
+//Manager
+#import "AppConfig.h"
+#import "TLWXManager.h"
+#import "TLAlipayManager.h"
+#import <ImSDK/TIMManager.h>
+#import "ChatManager.h"
+
+//TL
+#import "TLTableView.h"
+#import "TLAlert.h"
+#import "TLBaseVC.h"
+#import "AccountTf.h"
+
+#import "TLUser.h"
+#import "TLNetworking.h"
+#import "TLPageDataHelper.h"
+#import "TLCurrencyHelper.h"
+
+#import "TLTextField.h"
+#import "TLPlaceholderView.h"
+#import "TLProgressHUD.h"
+#import "TLAuthHelper.h"
+
+
+//Foundation
+#import "NSString+Extension.h"
+
+#import "NSString+Custom.h"
+#import "NSNumber+TLAdd.h"
+#import <UIScrollView+TLAdd.h>
+#import "NSAttributedString+add.h"
+
+//UI
+#import "UIViewExt.h"
+
+#import "UIView+XMGExtension.h"
+
+#import "UIColor+Custom.h"
+#import "UILabel+Custom.h"
+#import "UIFont+UI.h"
+#import "UIButton+Custom.h"
+#import "UIButton+EnLargeEdge.h"
+#import "UIBarButtonItem+BackItem.h"
+
+//Controller
+#import "NavigationController.h"
+#import "TLUserLoginVC.h"
+
+//Macro
+#import "AppMacro.h"
+#import "NotificationMacro.h"
+#import "VendorMacro.h"
+#import "AppColorMacro.h"
+#import "APICodeMacro.h"
+
+//第三方
+#import "Masonry.h"
+#import "NSObject+MJKeyValue.h"
+#import "UIImageView+WebCache.h"
+#import "NSString+MJExtension.h"
+#import "UIButton+WebCache.h"
+
+//IM
+// 是否支持富文本显示
+#define kTestChatAttachment 1
+
+
+#import "CommonLibrary.h"
+
+#import "TIMAdapter.h"
+
+#import "ImageHeader.h"
+
+#import "ConstHeader.h"
+
+#import "CustomUIHeader.h"
+
+#import "AppDelegate.h"
+
+#import "AppUIHeaders.h"
+
+#import <AVFoundation/AVAsset.h>
+#endif /* BasePrefixHeader_h */
+
+#endif
